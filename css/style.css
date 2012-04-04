@@ -1,0 +1,55 @@
+body {
+  background: #000;
+  }
+  
+  
+#map1, #map2, #map3, #mapmask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  -moz-transition: opacity 5.0s linear;
+  -o-transition: opacity 5.0s linear;
+  -webkit-transition: opacity 5.0s linear;
+  transition: opacity 5.0s linear;
+  }
+  
+#mapmask {
+opacity: 0;
+z-index: 1;
+}
+#map1 {
+z-index: 0;
+}  
+#map2 {
+z-index: -1;
+}
+#map3 {
+z-index: -2;
+}
+  
+  a.zoomer {
+  text-decoration:none;
+  position:absolute;
+  background-color:#444;
+  color:#fff;
+  line-height:25px;
+  font-size:20px;
+  z-index:99999;
+  text-align:center;
+  width:25px;
+  height:25px;
+  }
+
+  a.zoomin {
+    right:5px;
+    }
+
+  a.zoomout {
+    right:35px;
+    }
+
+  a.zoomdisabled {
+    background-color:#333;
+    }
